@@ -96,18 +96,16 @@ console.log(`All the person salary are
 
 
 // Q4.Uber
-//  const Uber={
-//      constructor(kms,price){
-//          this.kms=kms;
-//          this.price=price;
-//     }
-//      set kms(price){
-//          console.log("price"+" "n);
-//        this.price=price*;
-//      }
-//      get price(){
-//       return this.price;
-//      }
-//  }
-// Uber.kms=5;
-// console.log(Uber.price);
+ class UberPrice{
+     constructor(kilometer,price=50){
+         this.kilometer=kilometer;
+         this.price=price;
+    }
+    get Price(){
+        return this.kilometer*this.price;
+    }
+}
+    var uber1=new UberPrice(5);
+    var uber2=new UberPrice(5,125);
+  console.log(uber1.Price);
+  console.log(uber2.Price);
